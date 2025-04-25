@@ -1,10 +1,15 @@
+/* Root styles */
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: #f5f5dc; /* Beige background */
+  color: #800020; /* Burgundy text */
+  font-family: 'Arial', sans-serif;
 }
 
+/* Logo styles */
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -12,12 +17,13 @@
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #800020aa); /* Burgundy shadow */
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2em #800020aa); /* Burgundy shadow */
 }
 
+/* Animation for spinning logo */
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -33,10 +39,115 @@
   }
 }
 
+/* Card styles */
 .card {
   padding: 2em;
+  background-color: #fffaf0; /* Light beige background */
+  border: 2px solid #800020; /* Burgundy border */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.read-the-docs {
-  color: #888;
+/* Button styles */
+.btn-refresh {
+  background-color: #800020; /* Burgundy background */
+  color: #f5f5dc; /* Beige text */
+  border: none;
+  padding: 0.75em 1.5em;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: background-color 300ms, transform 200ms;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.btn-refresh:hover {
+  background-color: #a52a2a; /* Darker burgundy on hover */
+  transform: scale(1.1); /* Slightly enlarge the button */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* No tours message styles */
+.no-tours {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: #800020; /* Burgundy text */
+}
+
+/* Gallery styles */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+/* Tour card styles */
+.tour-card {
+  background-color: #fffaf0; /* Light beige background */
+  border: 2px solid #800020; /* Burgundy border */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 300ms, box-shadow 300ms, border-color 300ms;
+}
+
+.tour-card:hover {
+  transform: scale(1.05); /* Slightly enlarge the card */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a deeper shadow */
+  border-color: #a52a2a; /* Darker burgundy border on hover */
+}
+
+/* Tour card image styles */
+.tour-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #800020; /* Burgundy border below the image */
+}
+
+.tour-card .tour-details {
+  padding: 1.5rem;
+}
+
+.tour-card h2 {
+  color: #800020; /* Burgundy text */
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tour-card p {
+  color: #4b4b4b; /* Neutral text color */
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.tour-card h3 {
+  color: #800020; /* Burgundy text */
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+/* Button to remove a tour */
+.tour-card .btn-remove {
+  background-color: #800020; /* Burgundy background */
+  color: #f5f5dc; /* Beige text */
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 300ms, transform 200ms;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tour-card .btn-remove:hover {
+  background-color: #a52a2a; /* Darker burgundy on hover */
+  transform: scale(1.1); /* Slightly enlarge the button */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
